@@ -1511,6 +1511,13 @@ export async function ensureInitialDatabaseSeed(): Promise<void> {
   }
   if ((await db.users.count()) === 0) {
     await db.users.bulkPut(DEFAULT_USERS);
+  } else {
+    for (const u of DEFAULT_USERS) {
+      const exists = await db.users.get(u.id);
+      if (!exists) {
+        await db.users.put(u);
+      }
+    }
   }
   if ((await db.trusted_devices.count()) === 0) {
     await db.trusted_devices.bulkPut(DEFAULT_TRUSTED_DEVICES);

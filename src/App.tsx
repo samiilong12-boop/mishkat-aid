@@ -232,6 +232,29 @@ export const App: React.FC = () => {
     setIsSessionLocked(false);
   };
 
+  // Automatically activate restricted Donor Portal mode if accessed via ?view=donor or ?role=donor or ?token=
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const view = params.get('view');
+      const roleParam = params.get('role');
+      const donor = params.get('donor');
+      const token = params.get('token');
+
+      if (view === 'donor' || roleParam === 'donor' || donor || token) {
+        const donorUser =
+          users.find((u) => u.role === 'donor') ||
+          DEFAULT_USERS.find((u) => u.role === 'donor');
+        if (donorUser && settings.current_user_role_code !== 'donor') {
+          handleUnlockAndSwitchUser(donorUser, settings.device_code || 'D1');
+        }
+        setActiveTab('donor_portal');
+      }
+    } catch {
+      // Ignore
+    }
+  }, [users, settings.current_user_role_code]);
+
   const handleHeaderQuickSync = async () => {
     setIsSyncingHeader(true);
     try {
