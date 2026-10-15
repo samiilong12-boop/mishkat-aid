@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">مشكاة للعمل الإنساني</string>
+    <string name="title_activity_main">مشكاة للعمل الإنساني</string>
+    <string name="package_name">org.mishkat.aid</string>
+    <string name="custom_url_scheme">org.mishkat.aid</string>
+</resources>

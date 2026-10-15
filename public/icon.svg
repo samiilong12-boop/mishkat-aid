@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <!-- Rounded Base Background -->
+  <rect width="128" height="128" rx="28" fill="#0B4F8A"/>
+  
+  <!-- Subtle Gradient Glow -->
+  <circle cx="64" cy="62" r="44" fill="#009EDB" fill-opacity="0.18"/>
+  
+  <!-- Outer Shield of Protection & Humanitarian Care -->
+  <path d="M64 20L98 38V66C98 88 80 106 64 112C48 106 30 88 30 66V38L64 20Z" fill="#009EDB" fill-opacity="0.12" stroke="#38BDF8" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Mishkat Lantern Dome & Top Ring -->
+  <circle cx="64" cy="36" r="6" stroke="#FDE047" stroke-width="2.5" fill="none"/>
+  <path d="M52 46C56 42 72 42 76 46" stroke="#FDE047" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Mishkat Radiant Glass Chamber -->
+  <path d="M50 48H78L82 72C82 78 76 84 64 84C52 84 46 78 46 72L50 48Z" fill="#FEF08A" fill-opacity="0.25" stroke="#FBBF24" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <!-- Inner Flame of Hope & Relief -->
+  <path d="M64 54C68 62 72 66 64 76C56 66 60 62 64 54Z" fill="#F59E0B"/>
+  <path d="M64 60C66 64 68 67 64 73C60 67 62 64 64 60Z" fill="#FEF08A"/>
+  
+  <!-- Lantern Base Stand -->
+  <path d="M54 84H74L77 90H51L54 84Z" fill="#D97706" stroke="#F59E0B" stroke-width="1.5"/>
+
+  <!-- Compassion Checkmark / Olive Leaf Accent -->
+  <path d="M42 66L54 78L88 44" stroke="#10B981" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+</svg>
